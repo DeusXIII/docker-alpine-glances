@@ -18,13 +18,13 @@ RUN pip install --upgrade pip
 RUN pip install glances
 
 # Installation des librairies
-RUN pip install bottle 
+RUN pip install bottle
 #RUN pip install zeroconf 
 RUN pip install pymdstat 
 #RUN pip install potsdb 
 #RUN pip install statsd 
 #RUN pip install pystache 
-RUN pip install docker-py 
+RUN pip install docker
 #RUN pip install pysnmp 
 RUN pip install py-cpuinfo 
 #RUN pip install scandir 
