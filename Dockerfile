@@ -11,6 +11,9 @@ FROM alpine
 # Installation des prérequis Python
 RUN apk add --no-cache py2-pip py2-psutil
 
+# Mise à jour de PIP
+RUN pip install --upgrade pip
+
 # Installation de Glances
 RUN pip install glances
 
