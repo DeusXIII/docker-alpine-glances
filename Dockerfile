@@ -5,8 +5,8 @@
 # Modifié et basé sur Alpine
 #
 
-# Utilisation de l'image Alpine en version Edge (dev)
-FROM alpine:edge
+# Utilisation de l'image Alpine en version stable
+FROM alpine
 
 # Installation des prérequis Python
 RUN apk add --no-cache py2-pip py2-psutil
