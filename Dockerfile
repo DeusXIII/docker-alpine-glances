@@ -1,5 +1,5 @@
 #
-# Glances Dockerfile
+# Alpine Glances Dockerfile
 # From https://github.com/nicolargo/glances
 #
 # Modifié et basé sur Alpine
@@ -19,17 +19,15 @@ RUN pip install glances
 
 # Installation des librairies
 RUN pip install bottle
-#RUN pip install zeroconf 
-RUN pip install pymdstat 
-#RUN pip install potsdb 
-#RUN pip install statsd 
-#RUN pip install pystache 
+RUN pip install pystache
 RUN pip install docker
-#RUN pip install pysnmp 
-RUN pip install py-cpuinfo 
-#RUN pip install scandir 
+RUN pip install py-cpuinfo
+
+#RUN pip install scandir
 #RUN pip install netifaces
-#RUN pip install matplotlib
+#RUN pip install zeroconf
+#RUN pip install pysnmp
+#RUN pip install py3sensors
 
 # Define working directory.
 WORKDIR /glances
